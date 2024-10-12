@@ -181,7 +181,7 @@ g++    -MMD -MP -MP -DNDEBUG -DCRLF=2 -DLSB_FIRST -DFLAC__NO_DLL -DPUGIXML_HEADE
 echo "Building chdman.o"
 
 mkdir -p obj/Release/src/tools
-g++    -MMD -MP -MP -DNDEBUG -DCRLF=2 -DLSB_FIRST -DFLAC__NO_DLL -DPUGIXML_HEADER_ONLY -DLUA_COMPAT_ALL -DLUA_COMPAT_5_1 -DLUA_COMPAT_5_2 -DPTR64=1 -I"src/osd" -I"src/lib/util" -I"3rdparty" -I"3rdparty/libflac/include"  -g -std=c++17 -pipe -Werror -O3 -fno-strict-aliasing -Wno-unknown-pragmas -Wall -Wcast-align -Wformat-security -Wundef -Wwrite-strings -Wno-conversion -Wno-sign-compare -Wno-error=deprecated-declarations -Wno-unused-result -Wno-array-bounds -Wno-error=attributes -Wno-string-concatenation -Wno-shift-overflow -Wno-return-stack-address -Wno-cast-align -std=c++17 -Woverloaded-virtual -Wimplicit-fallthrough -Wno-class-varargs  -o "obj/Release/src/tools/chdman.o" -c "src/tools/chdman.cpp"
+g++    -MMD -MP -MP -DNDEBUG -DCRLF=2 -DLSB_FIRST -DFLAC__NO_DLL -DPUGIXML_HEADER_ONLY -DLUA_COMPAT_ALL -DLUA_COMPAT_5_1 -DLUA_COMPAT_5_2 -DPTR64=1 -I"src/osd" -I"src/lib/util" -I"3rdparty" -I"3rdparty/libflac/include"  -g -std=c++17 -pipe -Werror -Wno-error=vla-cxx-extension -O3 -fno-strict-aliasing -Wno-unknown-pragmas -Wall -Wcast-align -Wformat-security -Wundef -Wwrite-strings -Wno-conversion -Wno-sign-compare -Wno-error=deprecated-declarations -Wno-unused-result -Wno-array-bounds -Wno-error=attributes -Wno-string-concatenation -Wno-shift-overflow -Wno-return-stack-address -Wno-cast-align -std=c++17 -Woverloaded-virtual -Wimplicit-fallthrough -Wno-class-varargs  -o "obj/Release/src/tools/chdman.o" -c "src/tools/chdman.cpp"
 
 echo "Creating executable chdman"
 
